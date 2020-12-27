@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="slideCell" rowHeight="434" id="KGk-i7-Jjw" customClass="SlideCell" customModule="Timnak" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="434"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="434"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0l-vw-Uhw">
+                        <rect key="frame" x="5" y="5" width="326" height="424"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="slidecell" translatesAutoresizingMaskIntoConstraints="NO" id="Irt-0P-FA6">
+                                <rect key="frame" x="0.0" y="8" width="326" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="R2H-iX-rHd"/>
+                                    <constraint firstAttribute="width" constant="326" id="Sod-Xa-t4A"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtP-Uz-UuN">
+                                <rect key="frame" x="269" y="226" width="54" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="voicemail_black_108x108"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btk-Ly-3ku">
+                                <rect key="frame" x="112" y="88" width="102" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="lHI-ET-w2L"/>
+                                    <constraint firstAttribute="height" constant="50" id="t0p-Vf-idO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcN-74-zbK">
+                                <rect key="frame" x="0.0" y="8" width="326" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="Pkf-TR-WKe"/>
+                                    <constraint firstAttribute="width" constant="326" id="SwI-Nd-wEV"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="LargeImageBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Kmd-8Q-X2l"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" estimatedSectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="1cB-Mt-yVA">
+                                <rect key="frame" x="0.0" y="288" width="326" height="136"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVL-vb-FuB">
+                                <rect key="frame" x="3" y="226" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="AgY-bq-GUd"/>
+                                    <constraint firstAttribute="height" constant="54" id="WoP-p4-gGS"/>
+                                </constraints>
+                                <state key="normal" image="speaker.3" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35"/>
+                                </state>
+                                <connections>
+                                    <action selector="slideVoice:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KS4-En-MiK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1cB-Mt-yVA" firstAttribute="top" secondItem="BtP-Uz-UuN" secondAttribute="bottom" constant="8" id="8qT-no-FeX"/>
+                            <constraint firstItem="Irt-0P-FA6" firstAttribute="leading" secondItem="x0l-vw-Uhw" secondAttribute="leading" id="BpG-Lr-tTP"/>
+                            <constraint firstItem="mcN-74-zbK" firstAttribute="top" secondItem="x0l-vw-Uhw" secondAttribute="top" constant="8" id="EfP-kW-4Tn"/>
+                            <constraint firstAttribute="trailing" secondItem="1cB-Mt-yVA" secondAttribute="trailing" id="HTV-6Y-ler"/>
+                            <constraint firstItem="BtP-Uz-UuN" firstAttribute="top" secondItem="Irt-0P-FA6" secondAttribute="bottom" constant="8" id="Ldi-l8-wSu"/>
+                            <constraint firstItem="Irt-0P-FA6" firstAttribute="top" secondItem="x0l-vw-Uhw" secondAttribute="top" constant="8" id="MvW-lT-66y"/>
+                            <constraint firstItem="Btk-Ly-3ku" firstAttribute="leading" secondItem="x0l-vw-Uhw" secondAttribute="leading" constant="112" id="PBB-S2-ft7"/>
+                            <constraint firstItem="IVL-vb-FuB" firstAttribute="leading" secondItem="x0l-vw-Uhw" secondAttribute="leading" constant="3" id="QlG-oi-Xv6"/>
+                            <constraint firstAttribute="trailing" secondItem="Btk-Ly-3ku" secondAttribute="trailing" constant="112" id="VeX-7S-s5g"/>
+                            <constraint firstItem="IVL-vb-FuB" firstAttribute="top" secondItem="Irt-0P-FA6" secondAttribute="bottom" constant="8" id="gV2-64-cxV"/>
+                            <constraint firstAttribute="trailing" secondItem="Irt-0P-FA6" secondAttribute="trailing" id="gp1-sV-3gc"/>
+                            <constraint firstAttribute="bottom" secondItem="1cB-Mt-yVA" secondAttribute="bottom" id="hOf-TA-mSb"/>
+                            <constraint firstAttribute="trailing" secondItem="mcN-74-zbK" secondAttribute="trailing" id="he6-rU-hIU"/>
+                            <constraint firstItem="mcN-74-zbK" firstAttribute="leading" secondItem="x0l-vw-Uhw" secondAttribute="leading" id="q0k-Ff-hf6"/>
+                            <constraint firstItem="1cB-Mt-yVA" firstAttribute="leading" secondItem="x0l-vw-Uhw" secondAttribute="leading" id="w76-4H-0GQ"/>
+                            <constraint firstAttribute="trailing" secondItem="BtP-Uz-UuN" secondAttribute="trailing" constant="3" id="wQ8-fG-3qF"/>
+                            <constraint firstItem="Btk-Ly-3ku" firstAttribute="top" secondItem="x0l-vw-Uhw" secondAttribute="top" constant="88" id="zNa-5t-3lO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="x0l-vw-Uhw" secondAttribute="trailing" constant="5" id="5G1-fa-N1a"/>
+                    <constraint firstItem="x0l-vw-Uhw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="WwL-Q7-y7f"/>
+                    <constraint firstItem="x0l-vw-Uhw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="uXq-Gk-FhT"/>
+                    <constraint firstAttribute="bottom" secondItem="x0l-vw-Uhw" secondAttribute="bottom" constant="5" id="x1F-gu-Goc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="LargeImageBtn" destination="mcN-74-zbK" id="caU-cq-3E3"/>
+                <outlet property="LongPress" destination="BtP-Uz-UuN" id="hRo-kD-Iut"/>
+                <outlet property="TimeLableForCell" destination="Btk-Ly-3ku" id="mkg-nF-0HC"/>
+                <outlet property="ViewSlide" destination="x0l-vw-Uhw" id="lVJ-pB-Fkx"/>
+                <outlet property="imageSlide" destination="Irt-0P-FA6" id="ucB-PV-f4P"/>
+                <outlet property="tableViewInCell" destination="1cB-Mt-yVA" id="Y8E-3O-FWb"/>
+            </connections>
+            <point key="canvasLocation" x="91.304347826086968" y="162.05357142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="speaker.3" catalog="system" width="128" height="90"/>
+        <image name="voicemail_black_108x108" width="54" height="54"/>
+    </resources>
+</document>

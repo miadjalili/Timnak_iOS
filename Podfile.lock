@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.1.0)
+  - FontAwesome.swift (1.9.0)
+  - SideMenu (6.4.8)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.1)
+  - FontAwesome.swift (~> 1.9.0)
+  - SideMenu (~> 6.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FontAwesome.swift
+    - SideMenu
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  FontAwesome.swift: a403b88cec950511745ba8f2decd1b6a07346d13
+  SideMenu: 4a891be552d30bb6fa87ad404d62e485f8450c34
+
+PODFILE CHECKSUM: 5cb7568b54942063c140260ffa01fa3621db086f
+
+COCOAPODS: 1.9.1

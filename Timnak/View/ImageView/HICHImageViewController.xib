@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HICHImageViewController" customModule="HichApp" customModuleProvider="target">
+            <connections>
+                <outlet property="closeBtn" destination="dBq-Ij-Jir" id="WSl-WN-Mbk"/>
+                <outlet property="contentView" destination="LSM-Mb-XTx" id="YtN-JZ-aXb"/>
+                <outlet property="shareBtn" destination="CQq-xZ-ypj" id="8Bu-J4-4Hk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pF4-V5-6uz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSM-Mb-XTx" userLabel="contentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBq-Ij-Jir">
+                                    <rect key="frame" x="349" y="57" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="8Nq-pn-dHz"/>
+                                        <constraint firstAttribute="height" constant="35" id="RMa-7A-chl"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="X">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="closeBtnAction:" destination="-1" eventType="touchUpInside" id="A3k-qW-RFv"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQq-xZ-ypj">
+                                    <rect key="frame" x="349" y="819" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="Lio-ib-BJT"/>
+                                        <constraint firstAttribute="width" constant="35" id="gv5-2P-ZRm"/>
+                                    </constraints>
+                                    <state key="normal" image="share-darkmode">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="shareBtnAction:" destination="-1" eventType="touchUpInside" id="TAC-Hh-6Os"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="CQq-xZ-ypj" secondAttribute="trailing" constant="30" id="Edi-ru-bRk"/>
+                                <constraint firstItem="dBq-Ij-Jir" firstAttribute="top" secondItem="LSM-Mb-XTx" secondAttribute="topMargin" constant="5" id="u1v-Wl-Etf"/>
+                                <constraint firstAttribute="bottom" secondItem="CQq-xZ-ypj" secondAttribute="bottom" constant="42" id="w37-gj-ayd"/>
+                                <constraint firstAttribute="trailing" secondItem="dBq-Ij-Jir" secondAttribute="trailing" constant="30" id="wo7-b4-v3h"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="LSM-Mb-XTx" secondAttribute="bottom" id="0f3-AI-WFD"/>
+                        <constraint firstItem="LSM-Mb-XTx" firstAttribute="top" secondItem="pF4-V5-6uz" secondAttribute="top" id="2Ke-ni-f5M"/>
+                        <constraint firstAttribute="trailing" secondItem="LSM-Mb-XTx" secondAttribute="trailing" id="33j-ac-ckq"/>
+                        <constraint firstItem="LSM-Mb-XTx" firstAttribute="leading" secondItem="pF4-V5-6uz" secondAttribute="leading" id="uv9-r8-PMG"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="DQD-fM-YQD" appends="YES" id="qIM-0K-UPq"/>
+                    </connections>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pF4-V5-6uz" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="605-04-LOy"/>
+                <constraint firstItem="pF4-V5-6uz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EfV-jS-3wc"/>
+                <constraint firstAttribute="bottom" secondItem="pF4-V5-6uz" secondAttribute="bottom" id="eQw-Y8-ngu"/>
+                <constraint firstItem="pF4-V5-6uz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oM4-3I-ods"/>
+            </constraints>
+            <point key="canvasLocation" x="-7.2463768115942031" y="103.79464285714285"/>
+        </view>
+        <swipeGestureRecognizer direction="down" id="DQD-fM-YQD">
+            <connections>
+                <action selector="swipeDownAction:" destination="-1" id="9It-aV-4ec"/>
+            </connections>
+        </swipeGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="share-darkmode" width="18.5" height="22.5"/>
+    </resources>
+</document>

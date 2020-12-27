@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="attachFileCell" rowHeight="51" id="KGk-i7-Jjw" userLabel="attachFileCell" customClass="AttachFileCell" customModule="Timnak" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="51"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3g6-iP-dCK">
+                        <rect key="frame" x="0.0" y="0.0" width="328" height="51"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrT-Wx-FwT">
+                                <rect key="frame" x="288" y="11" width="32" height="29"/>
+                                <state key="normal" image="arrow.down.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22" scale="large"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="File Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6V3-f3-6Pz">
+                                <rect key="frame" x="5" y="11" width="76" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="328" id="3Mf-ev-yoa"/>
+                            <constraint firstAttribute="bottom" secondItem="6V3-f3-6Pz" secondAttribute="bottom" constant="11" id="8ag-2J-72Z"/>
+                            <constraint firstItem="NrT-Wx-FwT" firstAttribute="top" secondItem="3g6-iP-dCK" secondAttribute="top" constant="11" id="Jp3-Nx-vhq"/>
+                            <constraint firstAttribute="bottom" secondItem="NrT-Wx-FwT" secondAttribute="bottom" constant="11" id="R3l-1E-yyd"/>
+                            <constraint firstAttribute="height" constant="51" id="bju-qF-6cX"/>
+                            <constraint firstItem="6V3-f3-6Pz" firstAttribute="top" secondItem="3g6-iP-dCK" secondAttribute="top" constant="11" id="cba-RI-unl"/>
+                            <constraint firstAttribute="trailing" secondItem="NrT-Wx-FwT" secondAttribute="trailing" constant="8" id="jdZ-SR-jQk"/>
+                            <constraint firstItem="6V3-f3-6Pz" firstAttribute="leading" secondItem="3g6-iP-dCK" secondAttribute="leading" constant="5" id="roT-Mq-CfM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3g6-iP-dCK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2ky-f1-hnc"/>
+                    <constraint firstAttribute="trailing" secondItem="3g6-iP-dCK" secondAttribute="trailing" id="V73-Fg-qLh"/>
+                    <constraint firstAttribute="bottom" secondItem="3g6-iP-dCK" secondAttribute="bottom" id="fv3-hV-CU2"/>
+                    <constraint firstItem="3g6-iP-dCK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yY5-2q-BeM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="AttachBubbel" destination="3g6-iP-dCK" id="EQN-fk-MGo"/>
+            </connections>
+            <point key="canvasLocation" x="118.84057971014494" y="122.87946428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.down.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

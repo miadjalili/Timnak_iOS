@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C4443D7602B9718F9102769 /* libPods-Timnak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C35908436EF5B75C2E6B8A02 /* libPods-Timnak.a */; };
+		8C1E9DB7253C1A7800958DB0 /* MicStudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9DB6253C1A7800958DB0 /* MicStudentController.swift */; };
+		8C1E9DB9253C32F200958DB0 /* TableViewMicStuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9DB8253C32F200958DB0 /* TableViewMicStuCell.swift */; };
+		8C1E9DBC253C483300958DB0 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9DBA253C483300958DB0 /* MessageCell.swift */; };
+		8C1E9DBD253C483300958DB0 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E9DBB253C483300958DB0 /* MessageCell.xib */; };
+		8C1E9DBF253C833A00958DB0 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9DBE253C833A00958DB0 /* MessageModel.swift */; };
+		8C5E03AD25762AA50091D58A /* CameraFroStreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5E03AC25762AA50091D58A /* CameraFroStreaming.swift */; };
+		8C5E03AF25762AB20091D58A /* CameraFroStreaming.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5E03AE25762AB20091D58A /* CameraFroStreaming.xib */; };
+		8C5E03B5257631FD0091D58A /* DKCameraResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5E03B2257631FD0091D58A /* DKCameraResource.swift */; };
+		8C5E03B6257631FD0091D58A /* DKCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5E03B3257631FD0091D58A /* DKCamera.swift */; };
+		8C5E03B7257631FD0091D58A /* DKCameraLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5E03B4257631FD0091D58A /* DKCameraLocationManager.swift */; };
+		8C5E03B92576364D0091D58A /* DKCameraResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8C5E03B82576364C0091D58A /* DKCameraResource.bundle */; };
+		8C7A6805254D6E3400C305B1 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8C7A6804254D6E3400C305B1 /* IQKeyboardManagerSwift */; };
+		8C7A6808254D766100C305B1 /* SlideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A6806254D766100C305B1 /* SlideCell.swift */; };
+		8C7A6809254D766100C305B1 /* SlideCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7A6807254D766100C305B1 /* SlideCell.xib */; };
+		8C9E8C4B253B1E53003100FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9E8C4A253B1E53003100FF /* AppDelegate.swift */; };
+		8C9E8C4D253B1E53003100FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9E8C4C253B1E53003100FF /* SceneDelegate.swift */; };
+		8C9E8C4F253B1E53003100FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9E8C4E253B1E53003100FF /* ViewController.swift */; };
+		8C9E8C52253B1E53003100FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9E8C50253B1E53003100FF /* Main.storyboard */; };
+		8C9E8C54253B1E55003100FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C9E8C53253B1E55003100FF /* Assets.xcassets */; };
+		8C9E8C57253B1E55003100FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9E8C55253B1E55003100FF /* LaunchScreen.storyboard */; };
+		8CA9B1DC2566546200D04865 /* SlideVoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA9B1DB2566546200D04865 /* SlideVoiceTableViewCell.swift */; };
+		8CA9B1DE2566549500D04865 /* SlideVoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA9B1DD2566549500D04865 /* SlideVoiceController.swift */; };
+		8CB6C72B255FD30E00572865 /* attachFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB6C72A255FD30E00572865 /* attachFileCell.swift */; };
+		8CB9B9902552914D00690B50 /* AttachFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9B98E2552914D00690B50 /* AttachFileCell.swift */; };
+		8CB9B9912552914D00690B50 /* AttachFileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CB9B98F2552914D00690B50 /* AttachFileCell.xib */; };
+		8CBD949025593EA200908F84 /* HICHImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CBD948D25593EA200908F84 /* HICHImageViewController.xib */; };
+		8CBD949125593EA200908F84 /* ImageViewZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBD948E25593EA200908F84 /* ImageViewZoom.swift */; };
+		8CBD949225593EA200908F84 /* HICHImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBD948F25593EA200908F84 /* HICHImageViewController.swift */; };
+		8CC87008253E20980042DF5A /* AudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC87006253E20980042DF5A /* AudioCell.swift */; };
+		8CC87009253E20980042DF5A /* AudioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CC87007253E20980042DF5A /* AudioCell.xib */; };
+		8CD212B6256128ED00F9F9BA /* requestAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD212B5256128ED00F9F9BA /* requestAlamofire.swift */; };
+		8CD212B825626A8100F9F9BA /* Modellessonname.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD212B725626A8100F9F9BA /* Modellessonname.swift */; };
+		8CFDBCD6255D1C2400DEF9CB /* AttachFileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFDBCD5255D1C2400DEF9CB /* AttachFileController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C1E9DB6253C1A7800958DB0 /* MicStudentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicStudentController.swift; sourceTree = "<group>"; };
+		8C1E9DB8253C32F200958DB0 /* TableViewMicStuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewMicStuCell.swift; sourceTree = "<group>"; };
+		8C1E9DBA253C483300958DB0 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		8C1E9DBB253C483300958DB0 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		8C1E9DBE253C833A00958DB0 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		8C5E03AC25762AA50091D58A /* CameraFroStreaming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFroStreaming.swift; sourceTree = "<group>"; };
+		8C5E03AE25762AB20091D58A /* CameraFroStreaming.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraFroStreaming.xib; sourceTree = "<group>"; };
+		8C5E03B2257631FD0091D58A /* DKCameraResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKCameraResource.swift; sourceTree = "<group>"; };
+		8C5E03B3257631FD0091D58A /* DKCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKCamera.swift; sourceTree = "<group>"; };
+		8C5E03B4257631FD0091D58A /* DKCameraLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKCameraLocationManager.swift; sourceTree = "<group>"; };
+		8C5E03B82576364C0091D58A /* DKCameraResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DKCameraResource.bundle; sourceTree = "<group>"; };
+		8C7A6806254D766100C305B1 /* SlideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideCell.swift; sourceTree = "<group>"; };
+		8C7A6807254D766100C305B1 /* SlideCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideCell.xib; sourceTree = "<group>"; };
+		8C9AB2BE2573A4C70086CB5D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C9E8C47253B1E52003100FF /* Timnak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timnak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C9E8C4A253B1E53003100FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C9E8C4C253B1E53003100FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8C9E8C4E253B1E53003100FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C9E8C51253B1E53003100FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C9E8C53253B1E55003100FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C9E8C56253B1E55003100FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CA9B1DB2566546200D04865 /* SlideVoiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideVoiceTableViewCell.swift; sourceTree = "<group>"; };
+		8CA9B1DD2566549500D04865 /* SlideVoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideVoiceController.swift; sourceTree = "<group>"; };
+		8CB6C72A255FD30E00572865 /* attachFileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = attachFileCell.swift; sourceTree = "<group>"; };
+		8CB9B98E2552914D00690B50 /* AttachFileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachFileCell.swift; sourceTree = "<group>"; };
+		8CB9B98F2552914D00690B50 /* AttachFileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttachFileCell.xib; sourceTree = "<group>"; };
+		8CBD948D25593EA200908F84 /* HICHImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HICHImageViewController.xib; sourceTree = "<group>"; };
+		8CBD948E25593EA200908F84 /* ImageViewZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewZoom.swift; sourceTree = "<group>"; };
+		8CBD948F25593EA200908F84 /* HICHImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HICHImageViewController.swift; sourceTree = "<group>"; };
+		8CC87006253E20980042DF5A /* AudioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCell.swift; sourceTree = "<group>"; };
+		8CC87007253E20980042DF5A /* AudioCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioCell.xib; sourceTree = "<group>"; };
+		8CD212B5256128ED00F9F9BA /* requestAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = requestAlamofire.swift; sourceTree = "<group>"; };
+		8CD212B725626A8100F9F9BA /* Modellessonname.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modellessonname.swift; sourceTree = "<group>"; };
+		8CFDBCD5255D1C2400DEF9CB /* AttachFileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachFileController.swift; sourceTree = "<group>"; };
+		B9B10F5997B39D35E5D2F789 /* Pods-Timnak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timnak.debug.xcconfig"; path = "Target Support Files/Pods-Timnak/Pods-Timnak.debug.xcconfig"; sourceTree = "<group>"; };
+		C35908436EF5B75C2E6B8A02 /* libPods-Timnak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Timnak.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDEC44FF940AA5D50A0A38F0 /* Pods-Timnak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timnak.release.xcconfig"; path = "Target Support Files/Pods-Timnak/Pods-Timnak.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C9E8C44253B1E52003100FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C4443D7602B9718F9102769 /* libPods-Timnak.a in Frameworks */,
+				8C7A6805254D6E3400C305B1 /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		204A5D5B2E985DA566E73A6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C35908436EF5B75C2E6B8A02 /* libPods-Timnak.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82F63E14D483A6F10A09CB71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9B10F5997B39D35E5D2F789 /* Pods-Timnak.debug.xcconfig */,
+				DDEC44FF940AA5D50A0A38F0 /* Pods-Timnak.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8C5E03AB25762A4E0091D58A /* CameraFroStreaming */ = {
+			isa = PBXGroup;
+			children = (
+				8C5E03B3257631FD0091D58A /* DKCamera.swift */,
+				8C5E03B4257631FD0091D58A /* DKCameraLocationManager.swift */,
+				8C5E03B82576364C0091D58A /* DKCameraResource.bundle */,
+				8C5E03B2257631FD0091D58A /* DKCameraResource.swift */,
+				8C5E03AC25762AA50091D58A /* CameraFroStreaming.swift */,
+				8C5E03AE25762AB20091D58A /* CameraFroStreaming.xib */,
+			);
+			path = CameraFroStreaming;
+			sourceTree = "<group>";
+		};
+		8C9E8C3E253B1E52003100FF = {
+			isa = PBXGroup;
+			children = (
+				8C9E8C49253B1E52003100FF /* Timnak */,
+				8C9E8C48253B1E52003100FF /* Products */,
+				82F63E14D483A6F10A09CB71 /* Pods */,
+				204A5D5B2E985DA566E73A6D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C9E8C48253B1E52003100FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C9E8C47253B1E52003100FF /* Timnak.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C9E8C49253B1E52003100FF /* Timnak */ = {
+			isa = PBXGroup;
+			children = (
+				8CD212B42561288500F9F9BA /*  Network */,
+				8C9E8C5E253B2012003100FF /* Model */,
+				8C9E8C5F253B201A003100FF /* View */,
+				8C9E8C60253B2023003100FF /* Controller */,
+				8C9E8C4A253B1E53003100FF /* AppDelegate.swift */,
+				8C9E8C4C253B1E53003100FF /* SceneDelegate.swift */,
+				8C9E8C53253B1E55003100FF /* Assets.xcassets */,
+				8C9E8C50253B1E53003100FF /* Main.storyboard */,
+				8C9E8C55253B1E55003100FF /* LaunchScreen.storyboard */,
+				8C9AB2BE2573A4C70086CB5D /* Info.plist */,
+			);
+			path = Timnak;
+			sourceTree = "<group>";
+		};
+		8C9E8C5E253B2012003100FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E9DBE253C833A00958DB0 /* MessageModel.swift */,
+				8CD212B725626A8100F9F9BA /* Modellessonname.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C9E8C5F253B201A003100FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C5E03AB25762A4E0091D58A /* CameraFroStreaming */,
+				8C1E9DBA253C483300958DB0 /* MessageCell.swift */,
+				8C1E9DBB253C483300958DB0 /* MessageCell.xib */,
+				8CC87006253E20980042DF5A /* AudioCell.swift */,
+				8CC87007253E20980042DF5A /* AudioCell.xib */,
+				8C7A6806254D766100C305B1 /* SlideCell.swift */,
+				8C7A6807254D766100C305B1 /* SlideCell.xib */,
+				8CB9B98E2552914D00690B50 /* AttachFileCell.swift */,
+				8CB9B98F2552914D00690B50 /* AttachFileCell.xib */,
+				8CBD948C25593EA200908F84 /* ImageView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C9E8C60253B2023003100FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C9E8C4E253B1E53003100FF /* ViewController.swift */,
+				8C1E9DB6253C1A7800958DB0 /* MicStudentController.swift */,
+				8C1E9DB8253C32F200958DB0 /* TableViewMicStuCell.swift */,
+				8CFDBCD5255D1C2400DEF9CB /* AttachFileController.swift */,
+				8CB6C72A255FD30E00572865 /* attachFileCell.swift */,
+				8CA9B1DD2566549500D04865 /* SlideVoiceController.swift */,
+				8CA9B1DB2566546200D04865 /* SlideVoiceTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8CBD948C25593EA200908F84 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				8CBD948D25593EA200908F84 /* HICHImageViewController.xib */,
+				8CBD948E25593EA200908F84 /* ImageViewZoom.swift */,
+				8CBD948F25593EA200908F84 /* HICHImageViewController.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		8CD212B42561288500F9F9BA /*  Network */ = {
+			isa = PBXGroup;
+			children = (
+				8CD212B5256128ED00F9F9BA /* requestAlamofire.swift */,
+			);
+			path = " Network";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C9E8C46253B1E52003100FF /* Timnak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C9E8C5B253B1E55003100FF /* Build configuration list for PBXNativeTarget "Timnak" */;
+			buildPhases = (
+				8C6D453DEA6246095B743D36 /* [CP] Check Pods Manifest.lock */,
+				8C9E8C43253B1E52003100FF /* Sources */,
+				8C9E8C44253B1E52003100FF /* Frameworks */,
+				8C9E8C45253B1E52003100FF /* Resources */,
+				81226138A71CBD0B10091A6E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Timnak;
+			packageProductDependencies = (
+				8C7A6804254D6E3400C305B1 /* IQKeyboardManagerSwift */,
+			);
+			productName = Timnak;
+			productReference = 8C9E8C47253B1E52003100FF /* Timnak.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C9E8C3F253B1E52003100FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = MIAD;
+				TargetAttributes = {
+					8C9E8C46253B1E52003100FF = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 8C9E8C42253B1E52003100FF /* Build configuration list for PBXProject "Timnak" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C9E8C3E253B1E52003100FF;
+			packageReferences = (
+				8C7A6803254D6E3400C305B1 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = 8C9E8C48253B1E52003100FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C9E8C46253B1E52003100FF /* Timnak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C9E8C45253B1E52003100FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C9E8C57253B1E55003100FF /* LaunchScreen.storyboard in Resources */,
+				8C5E03AF25762AB20091D58A /* CameraFroStreaming.xib in Resources */,
+				8C1E9DBD253C483300958DB0 /* MessageCell.xib in Resources */,
+				8CBD949025593EA200908F84 /* HICHImageViewController.xib in Resources */,
+				8CC87009253E20980042DF5A /* AudioCell.xib in Resources */,
+				8C9E8C54253B1E55003100FF /* Assets.xcassets in Resources */,
+				8C9E8C52253B1E53003100FF /* Main.storyboard in Resources */,
+				8C7A6809254D766100C305B1 /* SlideCell.xib in Resources */,
+				8CB9B9912552914D00690B50 /* AttachFileCell.xib in Resources */,
+				8C5E03B92576364D0091D58A /* DKCameraResource.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81226138A71CBD0B10091A6E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Timnak/Pods-Timnak-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Timnak/Pods-Timnak-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Timnak/Pods-Timnak-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C6D453DEA6246095B743D36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Timnak-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C9E8C43253B1E52003100FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C5E03B7257631FD0091D58A /* DKCameraLocationManager.swift in Sources */,
+				8C9E8C4F253B1E53003100FF /* ViewController.swift in Sources */,
+				8C1E9DB7253C1A7800958DB0 /* MicStudentController.swift in Sources */,
+				8C9E8C4B253B1E53003100FF /* AppDelegate.swift in Sources */,
+				8CBD949125593EA200908F84 /* ImageViewZoom.swift in Sources */,
+				8C5E03AD25762AA50091D58A /* CameraFroStreaming.swift in Sources */,
+				8CB6C72B255FD30E00572865 /* attachFileCell.swift in Sources */,
+				8C1E9DB9253C32F200958DB0 /* TableViewMicStuCell.swift in Sources */,
+				8CB9B9902552914D00690B50 /* AttachFileCell.swift in Sources */,
+				8CA9B1DC2566546200D04865 /* SlideVoiceTableViewCell.swift in Sources */,
+				8CC87008253E20980042DF5A /* AudioCell.swift in Sources */,
+				8C5E03B6257631FD0091D58A /* DKCamera.swift in Sources */,
+				8C7A6808254D766100C305B1 /* SlideCell.swift in Sources */,
+				8CA9B1DE2566549500D04865 /* SlideVoiceController.swift in Sources */,
+				8C9E8C4D253B1E53003100FF /* SceneDelegate.swift in Sources */,
+				8CFDBCD6255D1C2400DEF9CB /* AttachFileController.swift in Sources */,
+				8CD212B825626A8100F9F9BA /* Modellessonname.swift in Sources */,
+				8CD212B6256128ED00F9F9BA /* requestAlamofire.swift in Sources */,
+				8C1E9DBC253C483300958DB0 /* MessageCell.swift in Sources */,
+				8C5E03B5257631FD0091D58A /* DKCameraResource.swift in Sources */,
+				8CBD949225593EA200908F84 /* HICHImageViewController.swift in Sources */,
+				8C1E9DBF253C833A00958DB0 /* MessageModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8C9E8C50253B1E53003100FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C9E8C51253B1E53003100FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C9E8C55253B1E55003100FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C9E8C56253B1E55003100FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C9E8C59253B1E55003100FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C9E8C5A253B1E55003100FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C9E8C5C253B1E55003100FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9B10F5997B39D35E5D2F789 /* Pods-Timnak.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52N8G5AS47;
+				INFOPLIST_FILE = Timnak/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jalili.Timnak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8C9E8C5D253B1E55003100FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDEC44FF940AA5D50A0A38F0 /* Pods-Timnak.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52N8G5AS47;
+				INFOPLIST_FILE = Timnak/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jalili.Timnak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C9E8C42253B1E52003100FF /* Build configuration list for PBXProject "Timnak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C9E8C59253B1E55003100FF /* Debug */,
+				8C9E8C5A253B1E55003100FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C9E8C5B253B1E55003100FF /* Build configuration list for PBXNativeTarget "Timnak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C9E8C5C253B1E55003100FF /* Debug */,
+				8C9E8C5D253B1E55003100FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C7A6803254D6E3400C305B1 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C7A6804254D6E3400C305B1 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C7A6803254D6E3400C305B1 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8C9E8C3F253B1E52003100FF /* Project object */;
+}

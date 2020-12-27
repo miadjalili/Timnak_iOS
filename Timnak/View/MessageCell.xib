@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="85" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Timnak" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="581" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="581" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="F9C-YZ-E7S">
+                        <rect key="frame" x="60" y="10" width="501" height="60"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y68-6T-3RR">
+                                <rect key="frame" x="0.0" y="0.0" width="501" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgh-DL-uuG">
+                                        <rect key="frame" x="10" y="9" width="481" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aj9-Zt-h04">
+                                        <rect key="frame" x="492" y="48" width="9" height="11"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.66660511711177206" green="0.9783830611969544" blue="0.79650129745602483" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="dgh-DL-uuG" secondAttribute="bottom" constant="10" id="BLX-C1-KJX"/>
+                                    <constraint firstAttribute="trailing" secondItem="dgh-DL-uuG" secondAttribute="trailing" constant="10" id="LUv-36-sZE"/>
+                                    <constraint firstAttribute="trailing" secondItem="dgh-DL-uuG" secondAttribute="trailing" constant="10" id="QZ1-uI-QCW"/>
+                                    <constraint firstAttribute="bottom" secondItem="dgh-DL-uuG" secondAttribute="bottom" constant="10" id="UxR-A0-BeR"/>
+                                    <constraint firstItem="dgh-DL-uuG" firstAttribute="leading" secondItem="y68-6T-3RR" secondAttribute="leading" constant="10" id="mUM-V8-JiI"/>
+                                    <constraint firstItem="dgh-DL-uuG" firstAttribute="leading" secondItem="y68-6T-3RR" secondAttribute="leading" constant="10" id="sss-gn-ane"/>
+                                    <constraint firstItem="dgh-DL-uuG" firstAttribute="top" secondItem="y68-6T-3RR" secondAttribute="top" constant="9" id="yy4-V2-Ejq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="F9C-YZ-E7S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="PRW-jH-qEZ"/>
+                    <constraint firstAttribute="trailing" secondItem="F9C-YZ-E7S" secondAttribute="trailing" constant="20" id="Xg1-S0-f51"/>
+                    <constraint firstAttribute="bottom" secondItem="F9C-YZ-E7S" secondAttribute="bottom" constant="15" id="zUQ-N9-hn5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="textMessageLabel" destination="dgh-DL-uuG" id="Dap-Ud-wQE"/>
+                <outlet property="viewMessageCell" destination="y68-6T-3RR" id="brI-2l-g2f"/>
+            </connections>
+            <point key="canvasLocation" x="231.15942028985509" y="65.290178571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
