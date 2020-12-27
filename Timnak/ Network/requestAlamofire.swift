@@ -11,7 +11,7 @@ import Alamofire
 
 class request {
     
- 
+ let api = ""
  let apiUrl = "http://178.173.147.89:8088/testget/lesson/listlessonnames"
     
     func updateApi (apiUrl : String , ComplishiomHandelar : @escaping ([Modellessonname]) ->() ){
